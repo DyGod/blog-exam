@@ -1,7 +1,8 @@
-let base_url = "http://127.0.0.1:8000/api/";
+let base_url = "http://blog-api.markdylan.tech/api/";
 let headers = {
     'Content-Type' : 'application/json',
     'Accept' : 'application/json',
+    'mode': 'no-cors'
 };
 const Fetch = {
     

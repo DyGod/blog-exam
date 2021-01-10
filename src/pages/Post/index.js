@@ -15,7 +15,7 @@ const Post = (props) => {
     const [loading, setLoading] = useState(true);
     const [recentPosts, setRecentPosts] = useState([]);
     const [category, setCategory] = useState("");
-    const [sort, setSort] = useState("");
+    const [sort, setSort] = useState("created_at,desc");
     
     const [pageFilter, setPageFilter] = useState({
         current: 1,

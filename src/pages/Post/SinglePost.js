@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Loader from "./../../components/Loader";
@@ -33,6 +34,9 @@ const SinglePost = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>{`${post ? post.title : ""} | Lifestyle Blog`}</title>
+      </Helmet>
       {post && (
         <div className="post-wrapper">
           <Loader show={loading} />
